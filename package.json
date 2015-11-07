@@ -1,0 +1,23 @@
+{
+  "name": "screen-shot",
+  "description": "",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dominictarr/screen-shot",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dominictarr/screen-shot.git"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "prepublishOnly": "npm ls &&  npm test",
+    "test": "set -e; for t in test/*.js; do node $t; done"
+  },
+  "bin": {
+    "shot": "./shot.sh"
+  },
+  "author": "Dominic Tarr <dominic.tarr@gmail.com> (http://dominictarr.com)",
+  "license": "MIT"  
+}
